@@ -15,6 +15,9 @@ const Item = ({ x, ContactData, setContactData, deleteContact }) => {
         deleteContact={deleteContact}
       />
       <ItemAbout x={x} />
+      {console.log(typeof x.about)
+      }
+      
     </div>
   );
 };

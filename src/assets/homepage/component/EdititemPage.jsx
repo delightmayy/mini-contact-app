@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import contactimg from "../img/contactimg.jpg"
+import contimg from "../img/contactimg.jpg"
 
 const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
     id: Number(id),
     about: About,
   };
-  console.log( typeof About);
+  console.log( ContactData);
   
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -154,7 +154,7 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
           </div>
         </div>
               <div className="hidden md:block py-4">
-                <img src={contactimg} alt=""  className=" h-full " />
+                <img src={contimg} alt=""  className=" h-full " />
               </div>
       </form>
     </div>

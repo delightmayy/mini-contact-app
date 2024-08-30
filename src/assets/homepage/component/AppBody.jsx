@@ -13,7 +13,7 @@ const AppBody = ({
   deleteContact,
 }) => {
   return (
-    <div className=" md:flex  md:pt-2 flex-grow  gap-4 md:gap-0  bg-zinc-300 ">
+    <div className=" md:flex  md:pt-2 flex-grow  gap-4 md:gap-0  bg-gray-400  ">
       <SideBar
         ContactData={ContactData}
         setContactData={setContactData}

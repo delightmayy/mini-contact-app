@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemAbout = ({ x }) => {
   return (
-    <div className="bg-gray-100 w-full px-4 py-1 md:p-4 text-black">
+    <div className="bg-gray-100  px-4 py-1 md:p-4 text-black">
       {x.about && (
         <details className=" md:hidden ">
           <summary className="text-center capitalize py-2 font-semibold  ">
