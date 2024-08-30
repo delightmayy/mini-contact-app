@@ -3,7 +3,7 @@ import ContactItem from "./ContactItem";
 
 const ConntactDetail = ({ ContactData, setContactData, deleteContact }) => {
   return (
-    <div className="flex flex-col w-full md:w-3/5 md:p-2 overflow-y-auto">
+    <div className="flex flex-col w-full md:w-8/12 md:p-2 overflow-y-auto">
       {ContactData.length ? (
         <ContactItem
           ContactData={ContactData}

@@ -11,8 +11,8 @@ const SideBar = ({
   AddNewItem,
 }) => { 
   return (
-    <div className=" flex flex-col sticky md:static top-14 w-full md:w-2/5 mx-auto h-52   md:h-full   bg-gray-400 ">
-      <div className="px-4 py-2  md:p-2 flex justify-between md:gap-2 ">
+    <div className=" flex flex-col sticky md:static top-14 w-full md:w-4/12 mx-auto h-52  md:h-full   bg-gray-400 ">
+      <div className="px-4 py-2   md:p-2 flex justify-between md:gap-2 ">
         <label htmlFor="search" className="hidden">
           search
         </label>

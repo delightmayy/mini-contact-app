@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import contimg from "../img/contactimg.jpg"
+import contactimg from "../img/contactimg.png"
 
 const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
   const navigate = useNavigate();
@@ -51,10 +51,10 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
       />
 
       <form
-        className=" mx-auto px-6 py-4  md:grid grid-cols-2   md:p-2  md:gap-3 text-white bg-zinc-700"
+        className=" mx-auto px-6 py-4  md:grid grid-cols-5   md:p-2  md:gap-3 text-white bg-zinc-700"
         onSubmit={(e) => handleFormSubmit(e)}
       >
-        <div className="flex flex-col gap-3 ">
+        <div className="flex flex-col gap-3 md:col-span-3 md:ps-2 ">
           <div>
             
             <label htmlFor="firstname">Firstname: </label>
@@ -153,8 +153,8 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
             </button>
           </div>
         </div>
-              <div className="hidden md:block py-4">
-                <img src={contimg} alt=""  className=" h-full " />
+              <div className="hidden md:block md:col-span-2 -mt-4">
+                <img src={contactimg} alt=""  className=" h-full " />
               </div>
       </form>
     </div>
