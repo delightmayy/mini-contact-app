@@ -34,7 +34,7 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
 
   return (
     <div className=" border px-2 py-4  max-w-7xl mx-auto ps-2   flex flex-col justify-center items-center gap-2 ">
-      <img src={img} alt="" className="border h-28 w-28  rounded-full mb-4 " />
+      <img src={img} alt="" className="border border-zinc-700 h-28 w-28  rounded-full mb-4 " />
 
       <label htmlFor="profilepicture" className="hidden">
         insert file
@@ -42,9 +42,9 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
 
       <input
         type="file"
-        name="profilepicture"
+        name="profilepicture" 
         id="profilepicture"
-        className="border rounded-full form-file"
+        className="border  border-zinc-700 rounded-md form-file"
         onChange={(e) => {
           setimg(URL.createObjectURL(e.target.files[0]));
         }}

@@ -13,7 +13,7 @@ const Slidelist = ({ item }) => {
           item.id.toString() === id && "bg-gray-100"
         }`}
       >
-        {Name.length >= 14 ? Name.slice(0, 13) + "..." : Name}
+        {Name.length >= 12 ? Name.slice(0, 11) + "..." : Name}
       </li>
       <li
         className={`md:hidden cursor-pointer w-full px-2 capitalize rounded-sm text-base ${

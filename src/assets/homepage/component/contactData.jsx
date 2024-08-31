@@ -1,7 +1,7 @@
 import img1 from "../img/contact.jpg";
 
 export const contactData = [
-  {
+   {
     firstname: "henri",
     lastname: "helvetica",
     username: "",

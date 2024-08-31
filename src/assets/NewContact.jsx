@@ -61,7 +61,7 @@ const NewContact = ({ ContactData, setContactData }) => {
           type="file"
           name="profilepicture"
           id="profilepicture"
-          className="border rounded-full form-file"
+          className="border border-zinc-700  rounded-md form-file"
           onChange={(e) => {
             setimg(URL.createObjectURL(e.target.files[0]));
           }}
