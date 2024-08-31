@@ -12,8 +12,9 @@ import { useEffect } from "react";
 
 const Home = ({ title }) => {
   const [ContactData, setContactData] = useState(
-    JSON.parse(localStorage.getItem("contactdata"))
+    JSON.parse(localStorage.getItem("contactdata")) || []
   );
+
   const [Search, setSearch] = useState("");
   const [Searchstate, setSearchstate] = useState("");
   const navigate = useNavigate();
@@ -31,10 +32,10 @@ const Home = ({ title }) => {
   const AddNewItem = () => {
     navigate("/contact/New");
   };
-  useEffect(()=>{
-    localStorage.setItem("contactdata", JSON.stringify(ContactData))
-  }, [ContactData])
-  
+
+  useEffect(() => {
+    localStorage.setItem("contactdata", JSON.stringify(ContactData));
+  }, [ContactData]);
 
   return (
     <section className="bg-gray-100 w-full flex-grow fixed top-0  h-svh flex flex-col max-w-lg mx-auto ">

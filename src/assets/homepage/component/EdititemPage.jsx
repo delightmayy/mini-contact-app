@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import contactimg from "../img/contactimg.jpg"
+import contactimg from "../img/contactimg.jpg";
 
 const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
   const navigate = useNavigate();
@@ -24,17 +24,21 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
     id: Number(id),
     about: About,
   };
-  console.log( ContactData);
-  
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     ContactData.splice(findID, 1, Newcontactdata);
+    localStorage.setItem("contactdata", JSON.stringify(ContactData));
     navigate(`/contact/${id ? id : 1}`);
   };
 
   return (
     <div className=" border px-2 py-4  max-w-7xl mx-auto ps-2   flex flex-col justify-center items-center gap-2 ">
-      <img src={img} alt="" className="border border-zinc-700 h-28 w-28  rounded-full mb-4 " />
+      <img
+        src={img}
+        alt=""
+        className="border border-zinc-700 h-28 w-28  rounded-full mb-4 "
+      />
 
       <label htmlFor="profilepicture" className="hidden">
         insert file
@@ -42,7 +46,7 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
 
       <input
         type="file"
-        name="profilepicture" 
+        name="profilepicture"
         id="profilepicture"
         className="border  border-zinc-700 rounded-md form-file"
         onChange={(e) => {
@@ -56,7 +60,6 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
       >
         <div className="flex flex-col gap-3 md:col-span-3 md:ps-2 ">
           <div>
-            
             <label htmlFor="firstname">Firstname: </label>
             <input
               type="text"
@@ -118,11 +121,8 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
             />
           </div>
           <div>
-            <label htmlFor="discription" >
-              Brief Discription
-            </label>
+            <label htmlFor="discription">Brief Discription</label>
             <textarea
-              
               placeholder="About"
               name="about"
               id="discription"
@@ -153,9 +153,9 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
             </button>
           </div>
         </div>
-              <div className="hidden md:block md:col-span-2  mt-4 mb-20">
-                <img src={contactimg} alt=""  className=" h-full " />
-              </div>
+        <div className="hidden md:block md:col-span-2  mt-4 mb-20">
+          <img src={contactimg} alt="" className=" h-full " />
+        </div>
       </form>
     </div>
   );

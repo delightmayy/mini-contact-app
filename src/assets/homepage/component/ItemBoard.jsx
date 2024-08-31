@@ -39,9 +39,6 @@ const ItemBoard = ({ x, ContactData, setContactData, deleteContact }) => {
 
         <div className="flex gap-4 items-center  capitalize pb-2 ">
           <Link
-            onClick={() => {
-              localStorage.setItem("ContactData", JSON.stringify(ContactData));
-            }}
             to={`/contact/edit/${x.id}`}
             className=" capitalize text-sm  border-gray-200 px-3 rounded-sm border text-sky-600 flex  items-center justify-center  hover:bg-sky-600 hover:text-white "
           >
