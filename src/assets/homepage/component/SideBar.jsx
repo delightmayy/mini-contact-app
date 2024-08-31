@@ -11,8 +11,8 @@ const SideBar = ({
   AddNewItem,
 }) => { 
   return (
-    <div className=" flex flex-col sticky md:static top-14 w-full md:w-4/12 mx-auto h-52  md:h-full   bg-gray-400 ">
-      <div className="px-4 py-2   md:p-2 flex justify-between md:gap-2 ">
+    <div className=" flex flex-col sticky md:static top-14 w-full md:w-4/12 mx-auto h-52   md:h-full bg-gray-400 ">
+      <div className="px-4 py-2  md:p-2 flex justify-between md:gap-2 ">
         <label htmlFor="search" className="hidden">
           search
         </label>
@@ -42,7 +42,7 @@ const SideBar = ({
           New
         </button>
       </div>
-      <ul className=" flex flex-col gap-4 justify-start px-4 pb-4 overflow-y-auto  max-h-48 md:max-h-svh ">
+      <ul className=" flex flex-col gap-4 justify-start px-4 pb-4 md:pb-20 overflow-y-auto  max-h-48 md:min-h-full ">
         {Search
           ? Searchstate.map((x) => <Slidelist key={x.id} item={x} />)
           : ContactData.map((x) => <Slidelist key={x.id} item={x} />)}

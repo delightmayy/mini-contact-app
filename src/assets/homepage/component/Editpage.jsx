@@ -7,7 +7,7 @@ const Editpage = ({ ContactData, setContactData }) => {
   const editeditem = ContactData.find((item) => item.id.toString() === id);
   
   return (
-    <section className="  bg-gray-400 flex-grow ">
+    <section className="  bg-gray-300 flex-grow overflow-y-auto min-h-full pb-16 md:pb-20 ">
       {editeditem ? (
         <EdititemPage
           id={id}

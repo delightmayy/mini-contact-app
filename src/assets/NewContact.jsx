@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import contactimg from "./homepage/img/contactimg.png";
+import contactimg from "./homepage/img/contactimg.jpg";
 
 const NewContact = ({ ContactData, setContactData }) => {
   const navigate = useNavigate();
@@ -45,7 +45,7 @@ const NewContact = ({ ContactData, setContactData }) => {
   }; */
 
   return (
-    <section className="  bg-gray-400 flex-grow ">
+    <section className="  bg-gray-400 flex-grow  overflow-y-auto pb-16 md:pb-20 min-h-full ">
       <div className=" border px-2 py-4  max-w-7xl mx-auto ps-2   flex flex-col justify-center items-center gap-2 ">
         <img
           src={img}
@@ -164,14 +164,14 @@ const NewContact = ({ ContactData, setContactData }) => {
               </label>
             </div>
 
-            <div className="flex justify-center items-center p-2 py-4">
-              <button className="capitalize p-2 mx-auto border-zinc-50 border  px-6 rounded-2xl hover:bg-zinc-500 ">
+            <div className="flex justify-center items-center md:justify-end p-2 py-4">
+              <button className="capitalize p-1 border-zinc-50 border  px-6 rounded-2xl hover:bg-zinc-500 ">
                 save
               </button>
             </div>
           </div>
 
-          <div className="hidden md:block md:col-span-2 -mt-4">
+          <div className="hidden md:block md:col-span-2 mt-4 mb-20">
             <img src={contactimg} alt="" className=" h-full " />
           </div>
         </form>

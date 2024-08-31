@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 
 const ItemBoard = ({ x, ContactData, setContactData, deleteContact }) => {
   return (
-    <div className=" grid grid-cols-2 md:flex md:rounded-lg w-full bg-zinc-300 px-4 py-2  md:p-1  gap-4">
+    <div className=" grid grid-cols-2 md:flex md:rounded-lg w-full bg-zinc-300 px-4 h md:p-1  gap-4">
       <div className="my-auto py-2 ">
         <img
           className=" border border-white h-32 rounded-s-lg"

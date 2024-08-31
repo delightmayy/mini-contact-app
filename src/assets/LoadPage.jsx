@@ -6,15 +6,15 @@ import { Loadanimation } from "./homepage/lotties/Loadanimate";
 const LoadPage = ( ContactData) => {
   const navigate = useNavigate();
   const Contact =  ContactData.ContactData
-  /* console.log(Contact[0].id); */
+  
 
   useEffect(() => {
     setTimeout(() => {
       navigate(`/contact/${(Contact.length)? (Contact[0].id): 1}`);
     }, 2000);
   }, []);
-  return (
-    <div className="flex-grow flex flex-col items-center  justify-center">
+  return ( 
+    <div className="flex-grow flex flex-col items-center w-full md:max-w-lg md:mx-auto justify-center">
       <div className=" max-w-28 -mt-4 ">
         <Lottie animationData={Loadanimation} loop={true} />
       </div>

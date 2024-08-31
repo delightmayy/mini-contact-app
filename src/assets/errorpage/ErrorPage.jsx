@@ -13,7 +13,7 @@ const ErrorPage = () => {
   return (
     <section className=" flex flex-col  flex-grow justify-center items-center w-full mt-8">
       
-      <button onClick={()=> navigate("/contact")}> Errorpage </button>
+      <button onClick={()=> navigate("/contact")}> Contact Not Found </button>
     </section>
   );
 };

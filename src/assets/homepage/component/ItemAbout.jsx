@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemAbout = ({ x }) => {
   return (
-    <div className="bg-gray-100  px-4 py-1 md:p-4 text-black">
+    <div className="bg-gray-100 w-full px-4 py-1 md:p-4 text-black">
       {x.about && (
         <details className=" md:hidden ">
           <summary className="text-center capitalize py-2 font-semibold  ">
@@ -16,7 +16,7 @@ const ItemAbout = ({ x }) => {
         <h1 className="text-center capitalize py-3 md: font-semibold ">
           more about {x.firstname}
         </h1>
-        <p className={"text-center text-wrap" }> {x.about}</p>
+        <p className={"text-center text-wrap pb-40" }> {x.about}</p>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Home = ({ title }) => {
   };
 
   return (
-    <section className="bg-gray-100 flex-grow flex flex-col ">
+    <section className="bg-gray-100 w-full flex-grow fixed top-0  h-svh flex flex-col max-w-lg mx-auto ">
       <Header title={title} />
 
       <Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import contactimg from "../img/contactimg.png"
+import contactimg from "../img/contactimg.jpg"
 
 const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
   const navigate = useNavigate();
@@ -147,13 +147,13 @@ const EdititemPage = ({ id, editeditem, ContactData, setContactData }) => {
               set favorite
             </label>
           </div>
-          <div className="flex justify-center items-center p-2 py-4">
-            <button className="capitalize p-2 mx-auto border-zinc-50 border  px-6 rounded-2xl hover:bg-zinc-500 ">
+          <div className="flex justify-center items-center md:justify-end p-2 py-4">
+            <button className="capitalize p-1  border-zinc-50 border  px-6 rounded-2xl hover:bg-zinc-500 ">
               save
             </button>
           </div>
         </div>
-              <div className="hidden md:block md:col-span-2 -mt-4">
+              <div className="hidden md:block md:col-span-2  mt-4 mb-20">
                 <img src={contactimg} alt=""  className=" h-full " />
               </div>
       </form>

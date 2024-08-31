@@ -6,7 +6,7 @@ const Item = ({ x, ContactData, setContactData, deleteContact }) => {
   return (
     <div
       key={x.id}
-      className=" flex flex-col items-center  bg-gray-100 shadow-stone-500 shadow-md "
+      className=" flex flex-col items-center w-full  bg-gray-100 shadow-stone-500 shadow-md "
     >
       <ItemBoard
         x={x}
@@ -15,8 +15,7 @@ const Item = ({ x, ContactData, setContactData, deleteContact }) => {
         deleteContact={deleteContact}
       />
       <ItemAbout x={x} />
-      {console.log(typeof x.about)
-      }
+     
       
     </div>
   );
